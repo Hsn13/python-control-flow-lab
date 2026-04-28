@@ -142,3 +142,33 @@ def weather_advice():
 
 # Call the function
 weather_advice()
+
+
+# Write a Python script named `fizz_buzz` that prints numbers from 1 to 50, but:
+# - For multiples of 3, print "Fizz" instead of the number.
+# - For multiples of 5, print "Buzz" instead of the number.
+# - For multiples of BOTH 3 and 5, print "FizzBuzz".
+#
+# Requirements:
+# - Use a loop to iterate through numbers from 1 to 50.
+# - Use conditional statements to check divisibility.
+# - Print each result on a new line.
+#
+# Hints:
+# - Use the modulo operator `%` to check if a number is divisible by another.
+# - Check for multiples of BOTH 3 and 5 first to avoid missing them.
+#
+def fizz_buzz():
+    # Your loop and condition logic goes here
+    for num in range(1, 51):
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz")
+        elif num % 3 == 0:
+            print("Fizz")
+        elif num % 5 == 0:
+            print("Buzz")
+        else:
+            print(num)
+
+# Call the function
+fizz_buzz()
